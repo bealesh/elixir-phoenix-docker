@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  scaffolding:
+    build: .
+    environment:
+      HOSTNAME: localhost
+      PORT: 4000
+      # mix phx.gen.secret
+      SECRET_KEY_BASE: fzBk8OEcI8thGxlypWPUqfR2w2WopdN8v8pmpuy2JNj2eerbYFnlecuVMrFPGYnW
+    ports:
+      - 4000:4000
